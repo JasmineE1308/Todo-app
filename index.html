@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width,initial scale=1.0">
+    <title>
+        TODO APP
+    </title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <header>
+        <h1> Income & Expenditure calculator</h1>
+    </header>
+    <main>
+        <section id="item-form">
+            <div class="home">
+                <h2> Income & Expence calculator</h2>
+                <h3>your Balance</h3>
+                <h4 id="balance">10,000/-</h4>
+            </div>
+                <div class="inc-exp-container">
+                    <div class="inc">
+                        <h4>Income</h4>
+                        <h4 id="income">0.00</h4>
+                    </div>
+                </div>
+                <div class="exp-container">
+                    <div class="exp">
+                        <h4>Expence</h4>
+                        <h4 id="expence">0.00</h4>
+                    </div>
+                </div>
+            <form id="form">
+                <input type="hidden" id="item-id">
+                <label for="title">Title</label>
+                <input type="text" id="title" placeholder="Enter your Items">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" placeholder="Enter the amount">
+                <button type="submit" id="submit-button">Add Entry</button>
+                <div class="about">
+                    <input type="radio" id="all"name="todo" value="all">
+                    <label for="All">all</label>
+                    <input type="radio" id="Income"name="todo" value="Income">
+                    <label for="Income">Income</label>
+                    <input type="radio" id="Expence"name="todo" value="Expence">
+                    <label for="Expence">Expence</label>
+                </div>
+            </form>
+        </section>
+        <section id="item-list">
+            <h5>Items</h5>
+            <table>
+                <thead>
+                    <tr>
+                        <th>title</th>
+                        <th>amount</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="items-tbody">
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
